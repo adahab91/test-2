@@ -1,7 +1,15 @@
+import "./styles/App.scss";
 import React from 'react';
+import {AppContainer} from "react-hot-loader";
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {
+    Route,
+    Switch,
+    HashRouter
+} from "react-router-dom";
+
+import App from './components/App/App';
+import Homepage from ".pages/homepage/homepage";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
